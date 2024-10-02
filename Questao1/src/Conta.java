@@ -16,7 +16,6 @@ public class Conta {
         this.depositar = depositar;
     }
 
-
     public void setTitular(String titular){
         this.titular = titular;
     }
@@ -47,10 +46,31 @@ public class Conta {
         return depositar + x;
     }
 
+    public void setId_conta(int id){
+        this.id_conta = id;
+    }
+    public int getId_conta(){
+        return id_conta;
+    }
+
+    public void dep(Double valor){
+        this.x += this.x + valor;
+    }
+
+    public void sac(double valor){
+        this.x -= this.x - valor;
+    }
+
+
     public void detalhes(){
+        System.out.println("\n Bem vindo.");
         System.out.println("Titular: "+ titular);
         System.out.println("ID da conta: "+ id_conta);
         System.out.println("Valor da conta atual: "+ x);
+    }
+
+    public void Sd(){
+        System.out.println("Valor do saldo atual: " + this.x);
     }
 
 
